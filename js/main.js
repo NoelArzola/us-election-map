@@ -46,16 +46,6 @@ var setStateResults = function(state) {
         theStates[state].rgbColor = [11, 32, 57];
     }
 
-    var countryTable = document.getElementById("countryResults"); //grabs country table
-    var row = countryTable.children[0].children[0];
-
-    //populates the country table
-    row.children[0].innerText = johnny.name;
-    row.children[1].innerText = johnny.totalVotes;
-    row.children[2].innerText = martha.name;
-    row.children[3].innerText = martha.totalVotes;
-    row.children[5].innerText = winner;
-
     var statesTable = document.getElementById("stateResults"); //grabs state table
     var header = statesTable.children[0].children[0];
     var stateName = header.children[0];
@@ -127,3 +117,13 @@ winner = "DRAW";
 }
 
 //console.log(winner);
+
+var countryTable = document.getElementById("countryResults"); //grabs country table
+var row = countryTable.children[0].children[0];
+
+//populates the country table
+row.children[0].innerText = johnny.name;
+row.children[1].innerText = johnny.totalVotes;
+row.children[2].innerText = martha.name;
+row.children[3].innerText = martha.totalVotes;
+row.children[5].innerText = winner;
