@@ -16,8 +16,6 @@
       rel="stylesheet"
     />
 
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
     <!-- Place favicon.ico in the root directory -->
 
     <link rel="stylesheet" href="css/normalize.css" />
@@ -95,9 +93,7 @@
     <footer>
       <p>
         &copy;
-        <script>
-          document.write(new Date().getFullYear());
-        </script>
+        <span id="copyYear" style="color: black"></span>
         | Arzola Solutions, LLC <span>//</span> HTML5 Map Created By:
         <a href="http://dougx.net/map/usmap.html" target="_blank">DougX.net</a>
       </p>
@@ -122,6 +118,9 @@
     </script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      document.querySelector("#copyYear").innerText = new Date().getFullYear();
+    </script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
